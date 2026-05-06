@@ -394,4 +394,209 @@ async def drm_handler(bot: Client, m: Message):
                         if caption == "/cc1":
                             cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{v_name} [{res}p].mkv`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
                             cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{v_name}.pdf`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
-                            cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{v_name}.zip`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b><
+                            cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{v_name}.zip`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
+                            ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{v_name}.jpg`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
+                            cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{v_name}.html`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
+                            ccyt = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{v_name}.mp4`\n<a href="{url}">__**Click Here to Watch Stream**__</a>\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
+                            ccm = f'[🎵]Mp3 Id : {str(count).zfill(3)}\n**Audio Title :** `{v_name}.mp3`\n<blockquote><b>Batch Name : {b_name}\nTopic Name : {t_name}</b></blockquote>\n\n**Extracted by➤**{CR}\n'
+                        elif caption == "/cc2":
+                            cc = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🎞️ Title :</b> {v_name}\n<b>├── Extention :  {CR} .mkv</b>\n<b>├── Resolution : [{res}]</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            cc1 = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>📁 Title :</b> {v_name}\n<b>├── Extention :  {CR} .pdf</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            cczip = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>📒 Title :</b> {v_name}\n<b>├── Extention :  {CR} .zip</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            ccimg = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🖼️ Title :</b> {v_name}\n<b>├── Extention :  {CR} .jpg</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            ccm = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🎵 Title :</b> {v_name}\n<b>├── Extention :  {CR} .mp3</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            cchtml = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<blockquote><b>⋅ ─  {t_name}  ─ ⋅</b></blockquote>\n\n<b>🌐 Title :</b> {v_name}\n<b>├── Extention :  {CR} .html</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                        else:
+                            cc = f'<blockquote><b>⋅ ─ {t_name} ─ ⋅</b></blockquote>\n<b>{str(count).zfill(3)}.</b> {v_name} [{res}p] .mkv'
+                            cc1 = f'<blockquote><b>⋅ ─ {t_name} ─ ⋅</b></blockquote>\n<b>{str(count).zfill(3)}.</b> {v_name} .pdf'
+                            cczip = f'<blockquote><b>⋅ ─ {t_name} ─ ⋅</b></blockquote>\n<b>{str(count).zfill(3)}.</b> {v_name} .zip'
+                            ccimg = f'<blockquote><b>⋅ ─ {t_name} ─ ⋅</b></blockquote>\n<b>{str(count).zfill(3)}.</b> {v_name} .jpg'
+                            ccm = f'<blockquote><b>⋅ ─ {t_name} ─ ⋅</b></blockquote>\n<b>{str(count).zfill(3)}.</b> {v_name} .mp3'
+                            cchtml = f'<blockquote><b>⋅ ─ {t_name} ─ ⋅</b></blockquote>\n<b>{str(count).zfill(3)}.</b> {v_name} .html'
+                    else:
+                        if caption == "/cc1":
+                            cc = f'[🎥]Vid Id : {str(count).zfill(3)}\n**Video Title :** `{name1} [{res}p].mkv`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
+                            cc1 = f'[📕]Pdf Id : {str(count).zfill(3)}\n**File Title :** `{name1}.pdf`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
+                            cczip = f'[📁]Zip Id : {str(count).zfill(3)}\n**Zip Title :** `{name1}.zip`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n' 
+                            ccimg = f'[🖼️]Img Id : {str(count).zfill(3)}\n**Img Title :** `{name1}.jpg`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
+                            ccm = f'[🎵]Audio Id : {str(count).zfill(3)}\n**Audio Title :** `{name1}.mp3`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
+                            cchtml = f'[🌐]Html Id : {str(count).zfill(3)}\n**Html Title :** `{name1}.html`\n<blockquote><b>Batch Name :</b> {b_name}</blockquote>\n\n**Extracted by➤**{CR}\n'
+                        elif caption == "/cc2":
+                            cc = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🎞️ Title :</b> {name1}\n<b>├── Extention :  {CR} .mkv</b>\n<b>├── Resolution : [{res}]</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            cc1 = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>📁 Title :</b> {name1}\n<b>├── Extention :  {CR} .pdf</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            cczip = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>📒 Title :</b> {name1}\n<b>├── Extention :  {CR} .zip</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            ccimg = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🖼️ Title :</b> {name1}\n<b>├── Extention :  {CR} .jpg</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            ccm = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🎵 Title :</b> {name1}\n<b>├── Extention :  {CR} .mp3</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                            cchtml = f"——— ✦ {str(count).zfill(3)} ✦ ———\n\n<b>🌐 Title :</b> {name1}\n<b>├── Extention :  {CR} .html</b>\n<blockquote><b>📚 Course : {b_name}</b></blockquote>\n\n**🌟 Extracted By : {CR}**"
+                        else:
+                            cc = f'<b>{str(count).zfill(3)}.</b> {name1} [{res}p] .mkv'
+                            cc1 = f'<b>{str(count).zfill(3)}.</b> {name1} .pdf'
+                            cczip = f'<b>{str(count).zfill(3)}.</b> {name1} .zip'
+                            ccimg = f'<b>{str(count).zfill(3)}.</b> {name1} .jpg'
+                            ccm = f'<b>{str(count).zfill(3)}.</b> {name1} .mp3'
+                            cchtml = f'<b>{str(count).zfill(3)}.</b> {name1} .html'
+#........................................................................................................................................................................................
+                remaining_links = len(links) - count
+                progress = (count / len(links)) * 100
+                Show = f"<i><b>Video Downloading</b></i>\n<blockquote><b>{str(count).zfill(3)}) {name1}</b></blockquote>" 
+                Show1 = f"<blockquote>🚀𝐏𝐫𝐨𝐠𝐫𝐞𝐬𝐬 » {progress:.2f}%</blockquote>\n┃\n" \
+                        f"┣🔗𝐈𝐧𝐝𝐞𝐱 » {count}/{len(links)}\n┃\n" \
+                        f"╰━🖇️𝐑𝐞𝐦𝐚𝐢𝐧 » {remaining_links}\n" \
+                        f"━━━━━━━━━━━━━━━━━━━━━━━━\n" \
+                        f"<blockquote><b>⚡Dᴏᴡɴʟᴏᴀᴅɪɴɢ Sᴛᴀʀᴛᴇᴅ...⏳</b></blockquote>\n┃\n" \
+                        f'┣💃𝐂𝐫𝐞𝐝𝐢𝐭 » {CR}\n┃\n' \
+                        f"╰━📚𝐁𝐚𝐭𝐜𝐡 » {b_name}\n" \
+                        f"━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
+                        f"<blockquote>📚𝐓𝐢𝐭𝐥𝐞 » {namef}</blockquote>\n┃\n" \
+                        f"┣🍁𝐐𝐮𝐚𝐥𝐢𝐭𝐲 » {quality}\n┃\n" \
+                        f'┣━🔗𝐋𝐢𝐧𝐤 » <a href="{link0}">**Original Link**</a>\n┃\n' \
+                        f'╰━━🖇️𝐔𝐫𝐥 » <a href="{url}">**Api Link**</a>\n' \
+                        f"━━━━━━━━━━━━━━━━━━━━━━━━━\n" \
+                        f"🛑**Send** /stop **to stop process**\n┃\n" \
+                        f"╰━✦𝐁𝐨𝐭 𝐌𝐚𝐝𝐞 𝐁𝐲 ✦ {CREDIT}"
+#........................................................................................................................................................................................           
+                if "drive" in url:
+                    try:
+                        ka = await helper.download(url, name)
+                        copy = await bot.send_document(chat_id=channel_id,document=ka, caption=cc1)
+                        count+=1
+                        os.remove(ka)
+                    except FloodWait as e:
+                        await m.reply_text(str(e))
+                        time.sleep(e.x)
+                        continue    
+  
+                elif "pdf" in url:
+                    if "cwmediabkt99" in url:
+                        max_retries = 15  # Define the maximum number of retries
+                        retry_delay = 4  # Delay between retries in seconds
+                        success = False  # To track whether the download was successful
+                        failure_msgs = []  # To keep track of failure messages
+                        
+                        for attempt in range(max_retries):
+                            try:
+                                await asyncio.sleep(retry_delay)
+                                url = url.replace(" ", "%20")
+                                scraper = cloudscraper.create_scraper()
+                                response = scraper.get(url)
+
+                                if response.status_code == 200:
+                                    with open(f'{namef}.pdf', 'wb') as file:
+                                        file.write(response.content)
+                                    await asyncio.sleep(retry_delay)  # Optional, to prevent spamming
+                                    copy = await bot.send_document(chat_id=channel_id, document=f'{namef}.pdf', caption=cc1)
+                                    count += 1
+                                    os.remove(f'{namef}.pdf')
+                                    success = True
+                                    break  # Exit the retry loop if successful
+                                else:
+                                    failure_msg = await m.reply_text(f"Attempt {attempt + 1}/{max_retries} failed: {response.status_code} {response.reason}")
+                                    failure_msgs.append(failure_msg)
+                                    
+                            except Exception as e:
+                                failure_msg = await m.reply_text(f"Attempt {attempt + 1}/{max_retries} failed: {str(e)}")
+                                failure_msgs.append(failure_msg)
+                                await asyncio.sleep(retry_delay)
+                                continue 
+                        for msg in failure_msgs:
+                            await msg.delete()
+                            
+                    else:
+                        try:
+                            cmd = f'yt-dlp -o "{namef}.pdf" "{url}"'
+                            download_cmd = f"{cmd} -R 25 --fragment-retries 25"
+                            os.system(download_cmd)
+                            copy = await bot.send_document(chat_id=channel_id, document=f'{namef}.pdf', caption=cc1)
+                            count += 1
+                            os.remove(f'{namef}.pdf')
+                        except FloodWait as e:
+                            await m.reply_text(str(e))
+                            time.sleep(e.x)
+                            continue    
+           
+                elif any(ext in url for ext in [".jpg", ".jpeg", ".png"]):
+                    try:
+                        ext = url.split('.')[-1]
+                        cmd = f'yt-dlp -o "{namef}.{ext}" "{url}"'
+                        download_cmd = f"{cmd} -R 25 --fragment-retries 25"
+                        os.system(download_cmd)
+                        copy = await bot.send_photo(chat_id=channel_id, photo=f'{namef}.{ext}', caption=ccimg)
+                        count += 1
+                        os.remove(f'{namef}.{ext}')
+                    except FloodWait as e:
+                        await m.reply_text(str(e))
+                        time.sleep(e.x)
+                        continue    
+
+                elif any(ext in url for ext in [".mp3", ".wav", ".m4a"]):
+                    try:
+                        ext = url.split('.')[-1]
+                        cmd = f'yt-dlp -o "{namef}.{ext}" "{url}"'
+                        download_cmd = f"{cmd} -R 25 --fragment-retries 25"
+                        os.system(download_cmd)
+                        copy = await bot.send_document(chat_id=channel_id, document=f'{namef}.{ext}', caption=ccm)
+                        count += 1
+                        os.remove(f'{namef}.{ext}')
+                    except FloodWait as e:
+                        await m.reply_text(str(e))
+                        time.sleep(e.x)
+                        continue    
+                    
+                elif 'encrypted.m' in url:    
+                    prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
+                    prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
+                    res_file = await helper.download_and_decrypt_video(url, cmd, name, appxkey)  
+                    filename = res_file  
+                    await prog1.delete(True)
+                    await prog.delete(True)
+                    await helper.send_vid(bot, m, cc, filename, vidwatermark, thumb, name, prog, channel_id)
+                    count += 1  
+                    await asyncio.sleep(1)  
+                    continue  
+
+                elif 'drmcdni' in url or 'drm/wv' in url or 'drm/common' in url:
+                    prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
+                    prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
+                    res_file = await helper.decrypt_and_merge_video(mpd, keys_string, path, name, raw_text2)
+                    filename = res_file
+                    await prog1.delete(True)
+                    await prog.delete(True)
+                    await helper.send_vid(bot, m, cc, filename, vidwatermark, thumb, name, prog, channel_id)
+                    count += 1
+                    await asyncio.sleep(1)
+                    continue
+     
+                else:
+                    prog = await bot.send_message(channel_id, Show, disable_web_page_preview=True)
+                    prog1 = await m.reply_text(Show1, disable_web_page_preview=True)
+                    res_file = await helper.download_video(url, cmd, name)
+                    filename = res_file
+                    await prog1.delete(True)
+                    await prog.delete(True)
+                    await helper.send_vid(bot, m, cc, filename, vidwatermark, thumb, name, prog, channel_id)
+                    count += 1
+                    time.sleep(1)
+                
+            except Exception as e:
+                await bot.send_message(channel_id, f'⚠️**Downloading Failed**⚠️\n**Name** =>> `{str(count).zfill(3)} {name1}`\n**Url** =>> {url}\n\n<blockquote expandable><i><b>Failed Reason: {str(e)}</b></i></blockquote>', disable_web_page_preview=True)
+                count += 1
+                failed_count += 1
+                continue
+
+    except Exception as e:
+        await m.reply_text(e)
+        time.sleep(2)
+
+    success_count = len(links) - int(raw_text) - failed_count + 1
+    video_count = len(links) - pdf_count - img_count
+    if m.document:
+        await bot.send_message(channel_id, f"<blockquote>🔗 Total URLs: {len(links)} \n┠🔴 Total Failed URLs: {failed_count}\n┠🟢 Total Successful URLs: {success_count}\n┃   ┠🎥 Total Video URLs: {video_count}\n┃   ┠📄 Total PDF URLs: {pdf_count}\n┃   ┠📸 Total IMAGE URLs: {img_count}</blockquote>\n")
+        await bot.send_message(channel_id, f"⋅ ─ list index ({raw_text}-{len(links)}) out of range ─ ⋅\n<blockquote><b>📚Batch : {b_name}</b></blockquote>\n⋅ ─ DOWNLOADING ✩ COMPLETED ─ ⋅")
+        if "/d" not in raw_text7:
+            await bot.send_message(m.chat.id, f"<blockquote><b>✅ Your Task is completed, please check your Set Channel📱</b></blockquote>")
+
+#============================================================================================================
+def register_drm_handlers(bot):
+    @bot.on_message(filters.private & (filters.document | filters.text))
+    async def call_drm_handler(bot: Client, m: Message):
+        await drm_handler(bot, m)
