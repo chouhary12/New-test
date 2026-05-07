@@ -318,7 +318,7 @@ async def drm_handler(bot: Client, m: Message):
 
                 headers = {
                     'host': 'api.classplusapp.com',
-                    'x-access-token': raw_text4,    
+                    'x-access-token': f'{raw_text4}',    
                     'accept-language': 'EN',
                     'api-version': '18',
                     'app-version': '1.4.73.2',
